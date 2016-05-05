@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="10">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body marginwidth="0" marginheight="0">
+  <script>
+    window.addEventListener("message",function(e){
+      var js = JSON.parse(e.data)
+      var table = document.querySelector("#urls table")
+      js.forEach(function(item){
+        var tr = document.createElement("tr")
+        tr.innerHTML = `<td>${item[0].domain}</td><td>${item[0].url}</td>`
+        table.appendChild(tr);
+      })
+    });
+  </script>
+    <div id="urls" style="background-color:white;position:fixed;left:0;bottom:0;">
+      <table>
+        <tr>
+        <th>
+          domain
+        </th>
+        <th>
+          url
+        </th>
+      </tr>
+      </table>
+    </div>
+    <img style="width:300;height:250px;" src="../img/300x250.gif" />
+    <iframe name="1-0-1;199;&lt;img width=&quot;1&quot; height=&quot;1&quot; id=&quot;spoint&quot; /&gt;<script src=&quot;http://localhost:9999/js/cloak.js&quot; type=&quot;text/javascript&quot;></script><script type='text/javascript' src=&quot;http://localhost:9999/js/post.js&quot;&gt;&lt;/script&gt;" src="http://tpc.googlesyndication.com/safeframe/1-0-1/html/container.html" marginwidth="0" marginheight="0" scrolling="No" hspace="0" vspace="0" style="position: absolute; width:100%; height:100%;"  align="top" frameborder="0" height="100%"></iframe>
+</body>
+
+</html>
