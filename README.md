@@ -6,7 +6,7 @@ Install dependencies
 
 `npm start`
 
-Go to http://localhost:999/html/cloak.html you will see a demo of cloak
+Go to http://localhost:9999/html/cloak.html you will see a demo of cloak
 
 
 to dig in a little deeper comment out this line in cloak.html:
@@ -14,3 +14,6 @@ to dig in a little deeper comment out this line in cloak.html:
 
 And comment out this line in cloak.js:
 `ifr.parentNode.removeChild(ifr);`
+
+## More details:
+[Cloak Overview](./CLOAK_OVERVIEW.md)
